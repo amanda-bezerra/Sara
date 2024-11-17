@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Amanda e Sara</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap" rel="stylesheet">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 16 16%22><text y=%2214%22 font-size=%2216%22>☄️</text></svg>">
+</head>
+<body onload="showPopup()">
+  <div class="carousel">
+    <div class="carousel-images">
+      <img src="Sara1.png" alt="Imagem 1">
+      <img src="Sara2.png" alt="Imagem 2">
+      <img src="Sara3.png" alt="Imagem 3">
+    </div>
+  </div>
+
+  <header>
+    <h1>Amanda e Sara</h1>
+    <p>Você me disse que gostava de coisas feitas à mão, então fiz algo ainda mais especial: um site feito à mão, com todo meu amor, que conta cada segundo desde que começamos a namorar. Cada momento nosso está ali, porque te amo mais a cada instante.</p>
+  </header>
+
+  <div class="container">
+    <div class="counter">
+      <h2>Juntas há:</h2>
+      <div id="time">
+        <div class="time-box"><span id="years">00</span> anos</div>
+        <div class="time-box"><span id="months">00</span> meses</div>
+        <div class="time-box"><span id="days">00</span> dias</div>
+        <div class="time-box"><span id="hours">00</span> horas</div>
+        <div class="time-box"><span id="minutes">00</span> minutos</div>
+        <div class="time-box"><span id="seconds">00</span> segundos</div>
+      </div>
+    </div>
+  </div>
+
+  <audio id="backgroundMusic" autoplay loop>
+    <source src="music.mp3" type="audio/mpeg">
+    Seu navegador não suporta reprodução de áudio.
+  </audio>
+
+  <canvas id="stars"></canvas>
+
+  <div id="popup">
+    <p>Você aceita abrir o site? Se abrir, vai ter que me dar muito amor! 😍</p>
+    <button onclick="closePopup()">Sim</button>
+    <button id="noButton" onmouseover="runAway()">Não</button>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
